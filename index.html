@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloosom Bookstore</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="task.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QOq9VEyMfYkK7h4t2dMCHJ/+w92a3Lz5LUAn77bm7V0uHoh1gIigLL4k4HFO7nAc" crossorigin="anonymous"> -->
+  
+
+</head>
+
+<body>
+  <div class="container-fluid" style="margin: 0;padding: 0;">
+    <div class="item bg-light" style="position:sticky; top:0; z-index: 1;">
+      <nav class="navbar bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./photos/Blossom=Dark.png " alt="Logo" class="d-inline-block align-text-top"
+              style="width:300px;height:70px;">
+          </a>
+          <form class="d-flex mx-auto navbar-search" style="width:350px">
+            <input class="form-control me-2" style="position: relative; border:2px solid grey; border-radius: 7px;"
+              type="search" placeholder="Search books, authors, ISBNs" aria-label="Search" />
+            <i class="bi bi-search" style="position: absolute; left: 49rem; padding: 5px 0 0 0;"></i>
+          </form>
+          <button type="button" class="btn btn-link" style="text-decoration: none; color: black;">Choose a Book
+            Store</button>
+          <button type="button" class="btn btn-link" style="text-decoration: none; color: black;">Sign In</button>
+          <i class="bi bi-bag"></i>
+        </div>
+
+      </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">All Books</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+              <ul class="navbar-nav w-100 d-flex justify-content-between">
+                <li class="nav-item me-4"><a class="nav-link" href="./book.html">New Books</a></li>
+                <li class="nav-item me-4"><a class="nav-link" href="./categories.html">Categories</a></li>
+                <li class="nav-item me-4"><a class="nav-link" href="./best.html">Best Sellers</a></li>
+                <li class="nav-item me-4"><a class="nav-link" href="./about.html">About Us</a></li>
+                <li class="nav-item me-4"><a class="nav-link" href="./contact.html">Contact</a></li>
+                <li class="nav-item me-4"><a class="nav-link" href="#">Upcoming Books</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown" style="padding-right: 7%;">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            User
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">Settings</button></li>
+            <li><button class="dropdown-item" type="button">Log Out</button></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="hero-overlay">
+            <h1 style="margin-right: 30%;">Discover Your Next Favorite Book</h1>
+            <p style="margin-right: 30%;">Books in your pocket</p>
+            <a style="margin-right: 30%;" href="#" class="btn btn-primary">Browse Our Collection</a>
+          </div>
+          <div class="carousel-item active opacity-25" style="z-index: -1;">
+            <img
+              src="https://images-production.bookshop.org/spree/promo_banner_slides/desktop_images/301/original/TiasandPrimas_BookshopAds_Banner.jpg?1725979519"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item opacity-25" style="z-index: -1;">
+            <img
+              src="https://images-production.bookshop.org/spree/promo_banner_slides/desktop_images/300/original/Bramble_Anniversary_Bookshop.org_2048x600.jpg?1725979445"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item opacity-25" style="z-index: -1;">
+            <img
+              src="https://images-production.bookshop.org/spree/promo_banner_slides/desktop_images/301/original/TiasandPrimas_BookshopAds_Banner.jpg?1725979519"
+              class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+    <br>
+    <div class="container">
+      <div class="container-fluid">
+        <section class="categories row text-center px-4" style="justify-content: space-between;">
+          <div class="category col-6 col-md-4 col-lg-2 mb-4">
+            <img src="https://images-us.bookshop.org/ingram/9780062993083.jpg?height=500&v=v2" alt="Fiction"
+              class="img-fluid" style="height: 200px; width: 200px;">
+            <h3>Fiction</h3>
+          </div>
+          <div class="category col-6 col-md-4 col-lg-2 mb-4">
+            <img
+              src="https://images-us.bookshop.org/ingram/9781419770531.jpg?height=500&v=v2-023ffdd493f474641e89c99e14a7effa"
+              alt="Non-Fiction" class="img-fluid" style="height: 200px; width: 200px;">
+            <h3>Non-Fiction</h3>
+          </div>
+          <div class="category col-6 col-md-4 col-lg-2 mb-4">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593446096.jpg?height=500&v=v2-c53dd2154e8ae7aca6637d66ac703b45"
+              alt="Fantasy" class="img-fluid" style="height: 200px; width: 200px;">
+            <h3>Fantasy</h3>
+          </div>
+          <div class="category col-6 col-md-4 col-lg-2 mb-4">
+            <img
+              src="https://images-us.bookshop.org/ingram/9781668037980.jpg?height=500&v=v2-6d3f12af346e41d347977da321287dd2"
+              alt="Humour" class="img-fluid" style="height: 200px; width: 200px;">
+            <h3>Humour</h3>
+          </div>
+          <div class="category col-6 col-md-4 col-lg-2 mb-4">
+            <img
+              src="https://images-us.bookshop.org/ingram/9780593798607.jpg?height=500&v=v2-eca9c34f10fdfe8e52d2fe16301bb168"
+              alt="Horror" class="img-fluid" style="height: 200px; width: 200px;">
+            <h3>Horror</h3>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <section class="featured-books">
+      <div class="carousel d-flex pic" style="justify-content: space-between; text-align: center; overflow-x: auto; ">
+        <div class="book-slide mx-3 ">
+          <img
+            src="https://images-us.bookshop.org/ingram/9780802163134.jpg?height=500&v=v2-8dabfb8cbf9835bddc321c5f0bb803bb"
+            alt="Book Title" style="height: 200px; width: 200px;">
+          <h4>Two Step Devil</h4>
+          <p>Jamie</p>
+          <p>$10.99</p>
+          <a href="./sign.html"><button type="submit" class="btn btn-primary">Read More</button></a>
+          <div class="rating">
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-half" style="color: gold;"></i>
+          </div>
+        </div>
+
+        <div class="book-slide mx-3">
+          <img
+            src="https://images-us.bookshop.org/ingram/9780593798607.jpg?height=500&v=v2-eca9c34f10fdfe8e52d2fe16301bb168"
+            alt="Book Title" style="height: 200px; width: 200px;">
+          <h4>Here One Moment</h4>
+          <p>Liane Mority</p>
+          <p>$15.99</p>
+          <a href="./sign.html"><button type="submit" class="btn btn-primary">Read More</button></a>
+          <div class="rating">
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-half" style="color: gold;"></i>
+          </div>
+        </div>
+
+        <div class="book-slide mx-3">
+          <img
+            src="https://images-us.bookshop.org/ingram/9781668023426.jpg?height=500&v=v2-f51d9d5318fd74bebfa8a48de42dbec2"
+            alt="Book Title" style="height: 200px; width: 200px;">
+          <h4>The Examiner</h4>
+          <p>Jannice</p>
+          <p>$12.11</p>
+          <a href="./sign.html"><button type="submit" class="btn btn-primary">Read More</button></a>
+          <div class="rating">
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-half" style="color: gold;"></i>
+          </div>
+        </div>
+
+        <div class="book-slide mx-3">
+          <img
+            src="https://images-us.bookshop.org/ingram/9780593446096.jpg?height=500&v=v2-c53dd2154e8ae7aca6637d66ac703b45"
+            alt="Book Title" style="height: 200px; width: 200px;">
+          <h4 style="height: 60px;">Tell Me Everything</h4>
+          <p>Elizabeth Scrout</p>
+          <p>$50.99</p>
+          <a href="./sign.html"><button type="submit" class="btn btn-primary">Read More</button></a>
+          <div class="rating">
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-half" style="color: gold;"></i>
+          </div>
+        </div>
+
+        <div class="book-slide mx-3">
+          <img
+            src="https://images-us.bookshop.org/ingram/9781250865229.jpg?height=500&v=v2-6b4df860ade718ca2e8d39cab3cb1244"
+            alt="Book Title" style="height: 200px; width: 200px;">
+          <h4>First In The Family</h4>
+          <p>Jessica Hoppe</p>
+          <p>$18.77</p>
+          <a href="./sign.html"><button type="submit" class="btn btn-primary">Read More</button></a>
+          <div class="rating">
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-half" style="color: gold;"></i>
+          </div>
+        </div>
+
+        <div class="book-slide mx-3">
+          <img
+            src="https://images-us.bookshop.org/ingram/9780316562485.jpg?height=500&v=v2-0a101677ae3223e414f12c8dec5f310b"
+            alt="Book Title" style="height: 200px; width: 200px;">
+          <h4>The Scrallet Throne</h4>
+          <p>Amy Leow</p>
+          <p>$8.99</p>
+          <a href="./sign.html"><button type="submit" class="btn btn-primary">Read More</button></a>
+          <div class="rating">
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-half" style="color: gold;"></i>
+          </div>
+        </div>
+
+        <div class="book-slide mx-3">
+          <img
+            src="https://images-us.bookshop.org/ingram/9780593642542.jpg?height=500&v=v2-c3343c5e2ee57ef05a6f6096fc3fe95f"
+            alt="Book Title" style="height: 200px; width: 200px;">
+          <h4>So Thirsty</h4>
+          <p>Rachel Harrison</p>
+          <p>$17.99</p>
+          <a href="./sign.html"><button type="submit" class="btn btn-primary">Read More</button></a>
+          <div class="rating">
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-half" style="color: gold;"></i>
+          </div>
+        </div>
+
+        <div class="book-slide">
+          <img
+            src="https://images-us.bookshop.org/ingram/9781668000267.jpg?height=500&v=v2-f4dc65bc1c3ce9d5f050bdc9ed0e3a6b"
+            alt="Book Title" style="height: 200px; width: 200px;">
+          <h4>Things</h4>
+          <p>Ohlo Gong</p>
+          <p>$14.99</p>
+          <a href="./sign.html"><button type="submit" class="btn btn-primary">Read More</button></a>
+          <div class="rating">
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-fill" style="color: gold;"></i>
+            <i class="bi bi-star-half" style="color: gold;"></i>
+          </div>
+        </div>
+        <!-- <button class="carousel-control-prev carousel slide" id="carouselExample"  type="button" data-bs-target="#carouselExample" data-bs-slide="prev" style="padding-bottom: 10%; padding-right: 13%; color: black;">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next carousel slide" type="button" data-bs-target="#carouselExample" data-bs-slide="next" style="padding-bottom: 10%; padding-left: 13%; color: black;" >
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button> -->
+
+      </div>
+
+    </section>
+
+    <br>
+    <section class="footer-class">
+      <form class="newsletter-form">
+        <div class="mb-3 text-center">
+          <label for="email" class="form-label" style="color: black;">Subscribe to our Newsletter</label>
+          <input type="email" class="form-control mx-auto" style="width:50%;" id="email" name="email"
+            placeholder="Your Email">
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
+        </div>
+      </form>
+    </section>
+
+
+    <footer>
+      <div class="footer-column">
+        <h4>About Us</h4>
+        <p>Learn more about our books.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul style="list-style: none;">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Best Sellers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <p>123 St Louis, India, 12345</p>
+        <p>Phone:12345678</p>
+        <p>Email: info@book.com</p>
+      </div>
+
+    </footer>
+  </div>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBY5d5Wl5L1W1Ev8e13e2j2p1HgUZeP5Tj6jIBliZrPp5RO2" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-JqB7thTQC3WjDa3iUQeC5Ohj2uJ1pp9yZ6RAklrkqxU8KwKkZ8PRYtAJaMvuc4h5" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

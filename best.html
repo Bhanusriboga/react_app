@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best sellers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="task.css">
+</head>
+
+<body>
+
+    <div class="container-fluid" style="margin: 0;padding: 0;">
+        <div class="item bg-light" style="position:sticky; top:0; z-index: 1;">
+            <nav class="navbar bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./photos/Blossom=Dark.png " alt="Logo" class="d-inline-block align-text-top"
+                            style="width:300px;height:70px;">
+                    </a>
+                    <form class="d-flex mx-auto navbar-search" style="width:350px">
+                        <input class="form-control me-2"
+                            style="position: relative; border:2px solid grey; border-radius: 7px;" type="search"
+                            placeholder="Search books, authors, ISBNs" aria-label="Search" />
+                        <i class="bi bi-search" style="position: absolute; left: 49rem; padding: 5px 0 0 0;"></i>
+                    </form>
+                    <button type="button" class="btn btn-link" style="text-decoration: none; color: black;">Choose a
+                        Book Store</button>
+                    <button type="button" class="btn btn-link" style="text-decoration: none; color: black;">Sign
+                        In</button>
+                    <i class="bi bi-bag"></i>
+                </div>
+
+            </nav>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">All Books</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav mx-auto">
+                            <ul class="navbar-nav w-100 d-flex justify-content-between">
+                                <li class="nav-item me-4"><a class="nav-link" href="./book.html">New Books</a></li>
+                                <li class="nav-item me-4"><a class="nav-link" href="./categories.html">Categories</a>
+                                </li>
+                                <li class="nav-item me-4"><a class="nav-link" href="./best.html">Best Sellers</a></li>
+                                <li class="nav-item me-4"><a class="nav-link" href="./about.html">About Us</a></li>
+                                <li class="nav-item me-4"><a class="nav-link" href="./contact.html">Contact</a></li>
+                                <li class="nav-item me-4"><a class="nav-link" href="./up.html">Upcoming Books</a></li>
+                                <!-- <li class="nav-item me-4"><a class="nav-link" href="#">Kids</a></li>
+                            <li class="nav-item me-4"><a class="nav-link" href="#">Games & Puzzles</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown" style="padding-right: 7%;">
+                    <button class="btn btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        User
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" type="button">Settings</button></li>
+                        <li><button class="dropdown-item" type="button">Log Out</button></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="container-fluid "
+            style="background-image: url(data:image/jpeg;base64,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); background-repeat: no-repeat; background-size: cover;height: 80vh;">
+            <div class="row ">
+
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-4">
+
+
+                </div>
+                <div class="col-md-6">
+                    <h1 style="margin-top: 50%; color: whitesmoke;">Our Best Book Sellers</h1>
+                </div>
+            </div>
+        </div>
+
+        <section class="featured-books" style="padding-bottom: 5%;">
+            <div class="carousel d-flex"
+                style="justify-content: space-between; text-align: center; overflow-x: scroll; overflow-y:hidden; padding-top: 5%;">
+                <div class="book-slide mx-3 ">
+                    <img src="https://images-us.bookshop.org/ingram/9780802163134.jpg?height=500&v=v2-8dabfb8cbf9835bddc321c5f0bb803bb"
+                        alt="Book Title" style="height: 200px; width: 200px;">
+                    <h4>Two Step Devil</h4>
+                    <p>Jamie</p>
+                    <p>$10.99</p>
+
+                </div>
+
+                <div class="book-slide mx-3">
+                    <img src="https://images-us.bookshop.org/ingram/9780593798607.jpg?height=500&v=v2-eca9c34f10fdfe8e52d2fe16301bb168"
+                        alt="Book Title" style="height: 200px; width: 200px;">
+                    <h4>Here One Moment</h4>
+                    <p>Liane Mority</p>
+                    <p>$15.99</p>
+
+                </div>
+
+                <div class="book-slide mx-3">
+                    <img src="https://images-us.bookshop.org/ingram/9781668023426.jpg?height=500&v=v2-f51d9d5318fd74bebfa8a48de42dbec2"
+                        alt="Book Title" style="height: 200px; width: 200px;">
+                    <h4>The Examiner</h4>
+                    <p>Jannice</p>
+                    <p>$12.11</p>
+
+                </div>
+
+                <div class="book-slide mx-3">
+                    <img src="https://images-us.bookshop.org/ingram/9780593446096.jpg?height=500&v=v2-c53dd2154e8ae7aca6637d66ac703b45"
+                        alt="Book Title" style="height: 200px; width: 200px;">
+                    <h4 style="height: 60px;">Tell Me Everything</h4>
+                    <p>Elizabeth Scrout</p>
+                    <p>$50.99</p>
+
+                </div>
+
+                <div class="book-slide mx-3">
+                    <img src="https://images-us.bookshop.org/ingram/9781250865229.jpg?height=500&v=v2-6b4df860ade718ca2e8d39cab3cb1244"
+                        alt="Book Title" style="height: 200px; width: 200px;">
+                    <h4>First In The Family</h4>
+                    <p>Jessica Hoppe</p>
+                    <p>$18.77</p>
+
+
+                </div>
+
+                <div class="book-slide mx-3">
+                    <img src="https://images-us.bookshop.org/ingram/9780316562485.jpg?height=500&v=v2-0a101677ae3223e414f12c8dec5f310b"
+                        alt="Book Title" style="height: 200px; width: 200px;">
+                    <h4>The Scrallet Throne</h4>
+                    <p>Amy Leow</p>
+                    <p>$8.99</p>
+
+
+                </div>
+
+                <div class="book-slide mx-3">
+                    <img src="https://images-us.bookshop.org/ingram/9780593642542.jpg?height=500&v=v2-c3343c5e2ee57ef05a6f6096fc3fe95f"
+                        alt="Book Title" style="height: 200px; width: 200px;">
+                    <h4>So Thirsty</h4>
+                    <p>Rachel Harrison</p>
+                    <p>$17.99</p>
+
+
+                </div>
+
+                <div class="book-slide mx-3">
+                    <img src="https://images-us.bookshop.org/ingram/9781668000267.jpg?height=500&v=v2-f4dc65bc1c3ce9d5f050bdc9ed0e3a6b"
+                        alt="Book Title" style="height: 200px; width: 200px;">
+                    <h4>Things</h4>
+                    <p>Ohlo Gong</p>
+                    <p>$14.99</p>
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <p>Learn more about our books.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul style="list-style: none;">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p>123 St Louis, India, 12345</p>
+                <p>Phone:12345678</p>
+                <p>Email: info@book.com</p>
+            </div>
+
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

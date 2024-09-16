@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-in">
+    <head>
+        <title>Web Forms</title>
+        <style>
+            
+            #first
+            {   
+                box-sizing: border-box;
+                background-color:beige;
+                width: 100%;
+                box-shadow: 3px 2px 3px ;
+                padding: 20px;
+                margin: 10px;
+       
+            }
+            #second
+            {
+                 
+                background-color: rgb(131, 141, 141);
+                width: 500px;
+                box-shadow: 3px 2px 3px rgb(77, 255, 0);
+                padding: 30px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="first">
+            <h2 text-align="center">User Registration</h2>
+            <label for="FirstName">First Name  :</label>
+            <input type="text" placeholder="Enter your Name" id="FirstName" name="FirstName"><br><br>
+            <label for="LastName">Last Name  :</label>
+            <input type="text" placeholder="Enter last Name" id="LastName" name="LastName"><br><br>
+            <label for="dob">Date of Birth  :</label>
+            <input type="date"><br><br>
+            <label for="Graduation">Graduation  :</label>
+            <input type="text" id="Graduation"><br><br>
+            <label for="gmail">Gmail  :</label>
+            <input type="email"><br><br>
+            <label>Enter User Name  :</label>
+            <input type="text" id="UserName"><br><br>
+            <label> Enter Password  :</label>
+            <input type="password" id="password"><br><br>
+            <label>Re-Enter Password  :</label>
+            <input type="password" id="password"><br><br>
+            <button >Register</button>
+            <button>reset</button>
+            <form id="second">
+                <h2 text-align="center">LogIn Form</h2>
+                <dl>
+                    <dt>User Name :</dt>
+                    <dd><input type="text" id="UserName"></dd>
+                    <dt>Password :</dt>
+                    <dd><input type="password" id="password"> </dd>
+                    
+                </dl>
+                <button>LogIn</button>
+                <button>reset</button>
+
+                
+            </form>  
+            <style>
+                .button {
+                  border-radius: 4px;
+                  background-color: #f4511e;
+                  border: none;
+                  color: #FFFFFF;
+                  text-align: center;
+                  font-size: 28px;
+                  padding: 20px;
+                  width: 200px;
+                  transition: all 0.5s;
+                  cursor: pointer;
+                  margin: 5px;
+                }
+                
+                .button span {
+                  cursor: pointer;
+                  display: inline-block;
+                  position: relative;
+                  transition: 0.5s;
+                }
+                
+                .button span:after {
+                  content: '\00bb';
+                  position: absolute;
+                  opacity: 0;
+                  top: 0;
+                  right: -20px;
+                  transition: 0.5s;
+                }
+                
+                .button:hover span {
+                  padding-right: 25px;
+                }
+                
+                .button:hover span:after {
+                  opacity: 1;
+                  right: 0;
+                }
+                .btn{
+                    
+                }
+                </style>
+                </head>
+                <body>
+                
+            <button class="btn">Login now</button>
+                
+                <button class="button"><span>Register </span></button>
+                
+        </form>
+        <br>
+
+        
+    </body>
+</html>

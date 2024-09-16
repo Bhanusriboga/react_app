@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LitReads Book Store</title>
+    <link rel="stylesheet" href="path/to/bootstrap.css">
+    <style>
+        .header-class {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        .book-list {
+            margin-top: 20px;
+        }
+        .footer-class {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .newsletter-form {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-class">
+        <h1 class="display-4 text-primary">LitReads</h1>
+    </header>
+
+    <main class="container">
+        <section class="row">
+            <article class="col-md-8 book-list">
+                <h2 class="text-secondary">Book Categories</h2>
+                <ul>
+                    <li class="lead">Fiction</li>
+                    <li class="lead">Non-Fiction</li>
+                    <li class="lead">Science Fiction</li>
+                    <li class="lead">Fantasy</li>
+                </ul>
+            </article>
+            <aside class="col-md-4">
+                <h2 class="text-secondary">Featured Books</h2>
+                <ul>
+                    <li class="font-weight-bold">"The Great Gatsby" by F. Scott Fitzgerald</li>
+                    <li class="font-weight-bold">"To Kill a Mockingbird" by Harper Lee</li>
+                    <li class="font-weight-bold">"1984" by George Orwell</li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="footer-class">
+        <form class="newsletter-form">
+            <div class="mb-3">
+                <label for="email" class="form-label">Subscribe to our Newsletter</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </footer>
+</body>
+</html>
+

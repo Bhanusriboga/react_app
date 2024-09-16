@@ -1,0 +1,108 @@
+
+.lefta{
+    padding-left: 5%;
+}
+.leftb{
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-around;
+    width:80%;
+}
+.icons{
+    padding:5px;
+}
+
+.storybook-header {
+    position: static; /* default behavior */
+    background-color: #ffebcd;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Image decoration with Relative Positioning */
+#chapter1 img {
+    position: relative;
+    top: 10px; /* Slightly offset from its normal position */
+    left: 15px;
+}
+
+.bio-popup {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: lightyellow;
+    border: 1px solid #333;
+    padding: 10px;
+    width: 150px;
+    display: none; /* Initially hidden */
+}
+
+#chapter2:hover .bio-popup {
+    display: block; /* Show bio when chapter is hovered */
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.fixed-nav ul {
+    list-style-type: none;
+}
+
+.fixed-nav ul li {
+    margin: 10px 0;
+}
+
+.fixed-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+footer p a {
+    display: inline;
+    margin-right: 15px;
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Block for sections */
+section {
+    display: block;
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Easter Egg hidden by default */
+.easter-egg {
+    display: none;
+}
+
+#chapter3:hover .easter-egg {
+    display: block; /* Reveal on hover */
+}
+
+#chapter3:hover .easter-egg {
+    display: block;
+}
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    font-family: 'Garamond', serif;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+
